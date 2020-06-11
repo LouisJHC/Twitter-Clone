@@ -11,4 +11,13 @@ form.addEventListener('submit', (e) => {
 
     loadingSpinner.style.display = '';
     form.style.display = 'none';
+
+    fetch('http://localhost:8080/tweet', {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json'
+        },
+        body: JSON.stringify( { title, content })
+    })
+
 })
