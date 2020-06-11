@@ -8,16 +8,18 @@
     <link rel="stylesheet" href="stylesheet.css"/>
 </head>
 <body>
+    <script defer src="client.js"></script>
     <h1 class="header">This is a Twitter Clone Board</h1>
     <form class='form-data'>
         <label for="title">Title</label>
-        <input class="u-full-width" type="text" id="title"></inpurt>
+        <input class="u-full-width" type="text" id="title" name="title"></inpurt>
 
         <label for="content">Content</label>
-        <textarea class="u-full-width" id="content"></textarea>
-
-        <button type="submit" class="button-primary" id='send-btn'>Send</button>
+        <textarea class="u-full-width" id="content" name="content"></textarea>
+        <button type="submit" id="send-btn">Send</button>
     </form>
-
+    <div class="loading-spinner">
+        <img src="loading-spinner.gif">
+    </div>
 </body>
 </html>

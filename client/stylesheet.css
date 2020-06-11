@@ -4,5 +4,10 @@
 
 .form-data {
     width: 50%;
-    margin: 0 auto;
+    margin: auto;
+}
+
+.loading-spinner {
+    width: 50%;
+    margin: auto;
 }
