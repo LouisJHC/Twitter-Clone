@@ -25,7 +25,9 @@ form.addEventListener('submit', (e) => {
 
             showTweets();
         }
-    ); 
+    ).catch(err => {
+        console.log(err);
+    }); 
 })
 
 function showTweets() {
@@ -53,5 +55,5 @@ function showTweets() {
         
         tweetList.appendChild(div);
         })
-    });
+    }).catch(err => console.log(err));
 }
